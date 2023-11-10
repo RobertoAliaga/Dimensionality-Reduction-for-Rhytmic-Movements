@@ -210,3 +210,70 @@ cumErrPCA = sum(diftiemposini(1,:))
 cumErrDPCA = sum(diftiemposini(2,:))
 meanErrPCA = mean(diftiemposini(1,:))
 meanErrDPCA = mean(diftiemposini(2,:))
+
+#VERSION 1
+%Se grafican las predicciones con dPCA
+figure(4)
+subplot(1,2,1)
+hold on
+h = bar (tiemposini);
+set (h(1), "facecolor", "#4DBEEE");
+set (h(2), "facecolor", "#A2142F");
+xlim([0.5,4.5]);
+plot([0.5,4.5],[1500,1500],"-k","LineWidth",2);
+xlabel("Condition")
+ylabel("Predicted time [ms]")
+legend("PCA","dPCA","location","north")
+hold off
+%title ("Prediction of movement onset time");
+
+
+%Se grafica el error absoluto acumulado para PCA y dPCA
+subplot(1,2,2)
+hold on
+h = bar (diftiemposini');
+set (h(1), "facecolor", "#4DBEEE");
+set (h(2), "facecolor", "#A2142F");
+xlabel("Condition")
+ylabel("Absolute error [ms]")
+plot([0.825 1.825 2.825 3.825],diftiemposini(1,:),"o","color","#4DBEEE","LineWidth",2);
+plot([1.175 2.175 3.175 4.175],diftiemposini(2,:),"o","color","#A2142F","LineWidth",2);
+plot([0.825 1.175],diftiemposini'(1,:),"-.k","LineWidth",2);
+plot([1.825 2.175],diftiemposini'(2,:),"-.k","LineWidth",2);
+plot([2.825 3.175],diftiemposini'(3,:),"-.k","LineWidth",2);
+plot([3.825 4.175],diftiemposini'(4,:),"-.k","LineWidth",2);
+%legend("PCA","dPCA")
+%title("Absolute error on movement onset prediction")
+
+
+
+#VERSION 2
+%Se grafican las predicciones con dPCA y PCA
+figure(5)
+subplot(1,2,1)
+hold on
+h = bar (tiemposini);
+set (h(1), "facecolor", "#4DBEEE");
+set (h(2), "facecolor", "#A2142F");
+xlim([0.5,4.5]);
+plot([0.5,4.5], [1500,1500], "-k", "LineWidth",2);
+xlabel("Condition")
+ylabel("Predicted time [ms]")
+legend("PCA", "dPCA", "location", "north")
+hold off
+%title ("Prediction of movement onset time");
+
+
+%Se grafica el error absoluto acumulado para PCA y dPCA
+subplot(1,2,2)
+hold on
+xlabel("Condition")
+ylabel("Absolute error [ms]")
+plot([0.825 1.825 2.825 3.825],diftiemposini(1,:),"o","color","#4DBEEE","LineWidth",2);
+plot([1.175 2.175 3.175 4.175],diftiemposini(2,:),"s","color","#A2142F","LineWidth",2);
+plot([0.825 1.175],diftiemposini'(1,:),"-.k","LineWidth",2);
+plot([1.825 2.175],diftiemposini'(2,:),"-.k","LineWidth",2);
+plot([2.825 3.175],diftiemposini'(3,:),"-.k","LineWidth",2);
+plot([3.825 4.175],diftiemposini'(4,:),"-.k","LineWidth",2);
+%legend("PCA","dPCA")
+%title("Absolute error on movement onset prediction")
