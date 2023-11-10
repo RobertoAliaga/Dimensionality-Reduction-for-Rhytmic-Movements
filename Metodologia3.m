@@ -228,7 +228,7 @@ hold off
 %title ("Prediction of movement onset time");
 
 
-%Se grafica el error absoluto acumulado para PCA y dPCA
+%Se grafica el error absoluto para PCA y dPCA
 subplot(1,2,2)
 hold on
 h = bar (diftiemposini');
@@ -264,7 +264,7 @@ hold off
 %title ("Prediction of movement onset time");
 
 
-%Se grafica el error absoluto acumulado para PCA y dPCA
+%Se grafica el error absoluto para PCA y dPCA
 subplot(1,2,2)
 hold on
 xlabel("Condition")
