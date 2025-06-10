@@ -9,3 +9,7 @@ The same methodology was followed in each case to establish a threshold that all
 * **Metodologia2.m**: it shows graphs of velocity and position of the monkey's hand over time, firing rate of all neurons over time, and PCA application to predict movement onset.
 * **Metodologia3.m**: it contains a similar procedure to Metodologia2.m, but using dPCA instead of PCA. It also shows a comparison between the performance of both dimensionality reduction techniques that were used (PCA and dPCA).
 * **Metodologia4.m**: it contains two ways of predicting movement onset directly from neural activity data (without dimensionality reduction). The first one consists of using only one neuron that has a similar timing to that of the movement. The second one consists on using mean activity of all neurons.
+
+This work was presented at the Summer School in Computational Intelligence (EVIC) 2023:
+
+Roberto Aliaga Medina, Andrea Colins Rodríguez, J. Cristian Salgado. *Decoding rhythmic movements onset from neural activity using dimensionality reduction techniques.* 
