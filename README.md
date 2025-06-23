@@ -1,6 +1,6 @@
 # Dimensionality-Reduction-for-Rhytmic-Movements
 
-This work aims to predict the rhytmic movement onset from neural data.
+This work aims to predict the movement onset from neural data for a rhythmic movement.
 
 Data comes from [Russo et al. (2020)](https://github.com/aarusso/trajectory-divergence). It was obtained from an experiment in which a monkey had to pedal through a virtual landscape. Specifically, we use data from monkey C. 
 
