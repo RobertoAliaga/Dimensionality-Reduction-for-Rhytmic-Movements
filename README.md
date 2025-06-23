@@ -1,5 +1,8 @@
 # Dimensionality-Reduction-for-Rhytmic-Movements
-Data from [Russo et al. (2020)](https://github.com/aarusso/trajectory-divergence), obtained from an experiment in which a monkey had to pedal through a virtual landscape. Specifically, we use data from monkey C. 
+
+This work aims to predict the movement onset from neural data for a rhytmic movement.
+
+Data comes from [Russo et al. (2020)](https://github.com/aarusso/trajectory-divergence). It was obtained from an experiment in which a monkey had to pedal through a virtual landscape. Specifically, we use data from monkey C. 
 
 Functions dpca.m, dpca_plot.m, and dpca_plot_default.m were constructed by [Kobak et al. (2016)](https://elifesciences.org/articles/10989) in MATLAB. Small changes were made to dpca_plot_default.m to plot desired colors in the obtained graphs.
 
